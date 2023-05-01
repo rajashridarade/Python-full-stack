@@ -14,6 +14,8 @@ def ShowallCake():
 class CakeMgmt:
     def addCake(c):
         with open("cakedata.txt", 'a') as fp:
+            # fp.write("ID  Name  price  Qty\n")
+            # fp.write("----------------------\n")
             fp.write(str(c))
             fp.write("\n")
 
