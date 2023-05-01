@@ -22,8 +22,8 @@ def viewCart():
 
 
 def billDetails():
-    if os.path.exists("cakedata.txt"):
-        with open('cakedata.txt', "r") as fp:
+    if os.path.exists("cartdata.txt"):
+        with open('cartdata.txt', "r") as fp:
             Total = 0
             for cake in fp:
                 cake = cake.strip()
@@ -95,7 +95,7 @@ class UserMgmt:
                         allCake.append(cake)
             print(allCake)
             if found:
-                with open("cartdata.txt", 'w') as fp:
+                with open("cakedata.txt", 'w') as fp:
                     for cake in allCake:
                         fp.write(cake)
             else:
