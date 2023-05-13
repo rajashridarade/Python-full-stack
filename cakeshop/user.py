@@ -25,6 +25,8 @@ def user():
             id = int(input("Enter id :"))
             qty = int(input("enter quntity"))
             UserMgmt.addTOcart(id,qty)
+            UserMgmt.editCakebyid(id,qty)
+
         elif choice == 5:
             billDetails()
         elif choice == 6:
