@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       body
+       {
+       background-color:green
+       }
+    </style>
+</head>
+<body>
+     <center> <h1>{{data}}</h1></center>
+      <hr/>
+      <ul>
+          {%for d in data%}
+            <li>{{d}}</li>
+          {%endfor%}
+      </ul>
+      <hr/>
+      <table border="1">
+         {%for d in data%}
+            <tr><td>{{d}}</td></tr>
+          {%endfor%}
+
+      </table>
+
+</body>
+</html>

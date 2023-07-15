@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       body
+       {
+       background-color:green
+       }
+    </style>
+</head>
+<body>
+     <center> <h1>{{data}}</h1></center>
+      <hr/>
+     <ol>
+         {%for d in data%}
+     <li>
+          <ul>
+              {%for x in d%}
+                <li>{{x}}</li>
+              {%endfor%}
+          </ul>
+     </li>
+        {%endfor%}
+     </ol>
+      <hr/>
+      <table border="1">
+          <tr><th>SR.no0</th><th>name</th><th>age</th></tr>
+            {%for d in data%}
+            <tr>
+               {%for x in d%}
+                  <td>{{x}}</td>
+              {%endfor%}
+            </tr>
+          {%endfor%}
+      </table>
+
+</body>
+</html>

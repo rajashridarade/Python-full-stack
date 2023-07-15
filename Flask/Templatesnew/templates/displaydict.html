@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       body
+       {
+       background-color:green
+       }
+    </style>
+</head>
+<body>
+     <center> <h1>{{data}}</h1></center>
+      <hr/>
+        <table border="1">
+            </hr>
+            <tr><th>SR.no</th><th>Name</th></tr>
+            {%for x,y in data.items()%}
+            <tr>
+                <td>{{x}}</td>
+                <td>{{y}}</td>
+            </tr>
+            {%endfor%}
+
+        </table>
+
+</body>
+</html>
